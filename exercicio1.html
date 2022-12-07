@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+</head>
+<body>
+
+    <div id="resul"></div>
+
+    <script>
+        let peca = 1;
+        let produto = 0;
+        let digite = 0;
+        let resultado = "";
+
+        
+
+
+        while (peca!= 0) {
+            peca = Number(prompt("Digite a peça, ou zero para sair"));
+
+            if (peca !=0){
+            produto = (prompt("Digite o produto "));
+            digite = (prompt("Digite Aprovado ou Reprovado"));
+           
+
+
+            resultado += "</br> Produto:" + produto + "</br> Peça:" + peca+ "<br>" +
+            "Digite: " + digite + "</br>" 
+           
+           document.getElementById("resul").innerHTML = resultado
+
+            }
+        }
+
+        </script>
+
+
+
+
+    
+</body>
+</html>

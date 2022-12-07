@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Candidatos/Cadidatas</h1>
+
+    <div id="resul"></div>
+
+
+
+
+
+    <h2>Idade media </h2>
+    <div id ="media"></div>
+
+
+
+    <h2>Quantidade De Candidatos</h2>
+    <div id="quantidade"></div>
+   
+
+    <script>
+        let login = 1;
+        let nome = 0;
+        let idade = 0;
+        let sexo = 0;
+        let experiencia = 0;
+        let media = 0
+        let quantidade = 0;
+        let resultado = "";
+
+        
+
+
+        while (login != 0) {
+            login = Number(prompt("Digite o login ou Zero para sair"))
+            
+
+            if (login  !=0){
+            nome = prompt("Digite o Nome")
+            idade = Number(prompt("Digite a idade de Nascimento"));
+            sexo = prompt("Escreva o Sexo");
+            experiencia = (prompt("Sim ou Não"));
+
+
+    
+            if( media ==0)
+            media =((idade+idade)/2); 
+
+
+            if(quantidade ==0)
+                quantidade =(login+login+login)
+            
+          
+
+
+            
+
+            
+            
+    
+
+                
+            
+
+
+
+        
+        
+  
+              
+            
+        
+
+
+
+            
+            resultado += "</br>Login:" + login + "</br> Nome:" + nome + "</br> Idade :" + idade+ "<br>" + 
+            "Sexo: " + sexo + "</br>" + "Experiencia: " + experiencia + "</br> "+ "</br>"
+           
+
+
+            document.getElementById("resul").innerHTML = resultado;
+
+            document.getElementById("media").innerHTML = "Idade Media: " + media
+
+            document.getElementById ("quantidade").innerHTML = "Quantidade de Candidatos: " + quantidade
+
+          
+
+
+
+
+
+
+
+
+
+    
+        
+    }
+}
+        
+
+
+
+    </script>
+</body>
+</html>
